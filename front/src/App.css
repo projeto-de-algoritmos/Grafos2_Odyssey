@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #9ABBBD;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.title{
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.widget-question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.widget-question h3{
+  margin: 0 0 8px;
+}
+
+.widget-question p{
+  margin: 0 0 12px;
+  color: #06127D;
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: center;
+}
+
+.odyssey-map {
+  pointer-events: none;
+  max-width: 800px;
+  width: 100%;
+  display: block;
+}
