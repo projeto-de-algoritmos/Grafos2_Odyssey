@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from UCSGraph import shortestPath
+from graphMainUse import cityGraphUCS
 
 app = FastAPI()
 
@@ -18,5 +18,5 @@ app.add_middleware(
 async def read_item(city_i: str, city_d: str):
     begin = city_i
     destiny = city_d    
-    final = shortestPath(begin, destiny)
+    final = cityGraphUCS(begin, destiny)
     return final
