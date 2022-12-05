@@ -22,7 +22,7 @@ E LV é: MinL - MaxL
 
 Na qual MinL é o menor nível da cidade e o MaxL o maior nível da cidade, por exemplo Achaia (42-46) o MinL seria 42 e o MaxL seria 46. 
 
-No cálculo é considerado o MinL da cidade com maiores níveis e o MaxL da cidade com menores níveis, ao exemplo de: Achaia e Kephallonia o MinL seria de Achaia(42) e o MaxL de Kephallonia(6), assim LV = 42 - 6 = 36 e D = 3 e DT = 3 + 36 = 39
+No cálculo é considerado o MinL da cidade com maiores níveis e o MaxL da cidade com menores níveis, ao exemplo de: Achaia e Kephallonia. O MinL seria de Achaia(42) e o MaxL de Kephallonia(6), assim LV = 42 - 6 = 36 e D = 3 e DT = 3 + 36 = 39
 
 ## Screenshots
 ### Caminhos entre as cidades
