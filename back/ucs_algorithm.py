@@ -31,9 +31,6 @@ class UCS:
 
   def remove_from_opened(self):
     self.opened.sort()
-    # for n in self.opened:
-    #   print(f"({n},{n.heuristic_value})", end = " ")
-    # print("\n")
     node = self.opened.pop(0)
     self.closed.append(node)
     return node

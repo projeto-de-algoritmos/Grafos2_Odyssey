@@ -209,7 +209,7 @@ for edge in G.edges():
 
 print('Plotando grafo como imagem. Verifique o arquivo graph.png.')
 f = plt.figure(1)
-f.set_figwidth(60)
-f.set_figheight(60)
+f.set_figwidth(10)
+f.set_figheight(10)
 nx.draw_networkx(G, pos=nx.spring_layout(G), with_labels=True)
 plt.savefig('graph.png')

@@ -18,6 +18,12 @@ Nesse projeto visamos aplicar os conhecimentos de Grafos 2 trazendo para o conte
 ![Mapa com pesos para base](assets/mapDistances.png)
 ### Mapa Original
 ![Mapa do jogo](assets/map.png)
+### Grafo
+![Grafo](assets/graph.png)
+### Tela Inicial
+![Tela Inicial](assets/homePage.png)
+### Resultado da Busca
+![Resultado da Busca](assets/resultPage.png)
 
 ## Instalação 
 **Linguagem**: Python e ReactJS<br>
@@ -44,6 +50,23 @@ pip install -r requirements.txt
 Rodar o projeto:
 ```
 uvicorn main:app --reload 
+```
+Se quiser ver o grafo gerado executar e verificar o arquivo graph.png:
+```
+python3 CitiesGraph.py
+```
+Caso o seguinte erro se apresente:
+```
+qt.qpa.plugin: Could not find the Qt platform plugin "1" in ""
+This application failed to start because no Qt platform plugin could be initialized. Reinstalling the application may fix this problem.
+```
+Rodar o comando no console: 
+```
+export QT_QPA_PLATFORM=offscreen
+```
+Em seguida rodar novamente o arquivo:
+```
+python3 CitiesGraph.py
 ```
 ### Dentro da pasta front:
 Entrar no front:

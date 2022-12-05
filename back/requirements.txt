@@ -1,3 +1,7 @@
 fastapi
 uvicorn
 numpy
+networkx
+matplotlib 
+networkx
+pyqt5
