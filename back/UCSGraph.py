@@ -194,14 +194,5 @@ def shortestPath(begin, destiny):
   UCS(graph, costs, frontier, visited, start_node)
   goal_node = destiny
   result = path[goal_node]
-  # result = shortestPath(begin, destiny)
-  if result != ' ':
-    return result
-  else:
-    aux = begin
-    begin = destiny
-    destiny = aux
-    response = shortestPath(begin, destiny)
-    new_response = response.split("->")
-    x = "<-".join(new_response)
-    return x
+
+  return result
