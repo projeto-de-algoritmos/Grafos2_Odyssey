@@ -67,7 +67,7 @@ class UCS:
       self.number_of_steps += 1
 
       if self.opened_is_empty():
-        print(f"No Solution Found after {self.number_of_steps} steps!!!")
+        print(f"Nenhuma solução encontrada após {self.number_of_steps} passos!!!")
         break
         
       selected_node = self.remove_from_opened()

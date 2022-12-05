@@ -79,7 +79,7 @@ class Graph:
             node1.add_neighboor((node2, weight))
             node2.add_neighboor((node1, weight))
         else:
-            print("Error: One or more nodes were not found")
+            print("Erro: um ou mais nós não foram encontrados")
 
 
     def number_of_nodes(self):
