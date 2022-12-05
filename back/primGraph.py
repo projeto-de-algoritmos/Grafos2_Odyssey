@@ -44,22 +44,19 @@ print(arv_ger_min)
 
 finalList = []
 
-for k in range(len(arv_ger_min)):
-    if arv_ger_min[k][0] == raiz and arv_ger_min[k][1] == final:
-        finalList.append(arv_ger_min[k])
-    else:
-        for j in range(k + 1, len(arv_ger_min)):
-            if(arv_ger_min[k][1] == arv_ger_min[j][0]):
-                # print(f'primeiro:{arv_ger_min[k]}, {arv_ger_min[j]}')
-                if arv_ger_min[k] not in finalList:
-                    finalList.append(arv_ger_min[k])
-                if arv_ger_min[j] not in finalList:
-                    finalList.append(arv_ger_min[j])
-        for g in range(k-1, len(arv_ger_min)):
-             if(arv_ger_min[g][1] != arv_ger_min[k][0]):
-                if(arv_ger_min[k][1] != arv_ger_min[j][0]):
-                    finalList.pop(arv_ger_min[g])
-                else:
-                    finalList.pop(arv_ger_min[k])
+j=1
 
-print(finalList)
+#Criação do menor caminho possível entre o nó inicial e o nó final
+def teste(j):
+    for k in range(len(arv_ger_min)):
+        if(j == len(arv_ger_min)):
+            return arv_ger_min
+        elif(k+1 != j):
+            k = 0
+            j = 1
+        elif(arv_ger_min[k][1] != arv_ger_min[j][0]):
+            arv_ger_min.remove(arv_ger_min[k])
+            teste(j)      
+        j += 1
+                
+teste(j)
