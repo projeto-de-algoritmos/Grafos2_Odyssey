@@ -39,6 +39,7 @@ function App() {
     .then((data) => {
       setLoadingResult(true)
       setRoute(data)
+      console.log(data)
     });
     
   }
@@ -105,7 +106,8 @@ function App() {
           {loadingResult && (
             <div id="step-route" className='widget-question'>
               <h3>A melhor rota para {destinyCity} considerando a distância e o nível das cidades é:</h3>
-              <p>{route}</p>
+              <p>{route[0]}</p>
+              <h3>Com a distância de:<span className="min-dist"> {route[1]}</span></h3>
               <button onClick={handleResetForm}>Refazer</button>
             </div>
           )}

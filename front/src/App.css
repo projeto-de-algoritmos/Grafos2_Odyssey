@@ -11,9 +11,26 @@ body{
 }
 
 .content{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+  width: 100%;
+}
+
+.map{
+  flex: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form{
+  flex: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .title{
@@ -38,6 +55,12 @@ body{
   margin: 0 0 12px;
   color: #06127D;
   font-weight: bold;
+}
+
+.min-dist{
+  color: #06127D;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 .input-container {
