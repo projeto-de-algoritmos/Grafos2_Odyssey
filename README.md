@@ -25,7 +25,10 @@ Nesse projeto visamos aplicar os conhecimentos de Grafos 2 trazendo para o conte
 Precisa rodar o front e o back ao mesmo tempo, recomenda-se utilizar dois terminais para tal, um na pasta back e outra na pasta front.
 ### Dentro da pasta back: 
 Pode ser que utilize python ao invés de python3 (válido para todos os comandos)
-
+Entrar no back:
+```
+cd back
+```
 Criar env:
 ```
 python3 -m venv .venv
@@ -43,7 +46,10 @@ Rodar o projeto:
 uvicorn main:app --reload 
 ```
 ### Dentro da pasta front:
-
+Entrar no front:
+```
+cd front
+```
 ```
 npm install
 ```
