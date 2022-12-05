@@ -1,4 +1,4 @@
-cityList = {
+cityList = [
     ['Kephallonia', 0],
     ['Phokis', 1],
     ['Malis', 2],
@@ -37,4 +37,4 @@ cityList = {
     ['Lemnos', 35],
     ['Lesbos', 36],
     ['Thasos', 37],
-}
+]
