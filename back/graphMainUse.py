@@ -65,6 +65,7 @@ def cityGraphUCS(begin, destiny):
   G.add_edge('Argolis', 'Attika', 4)
   G.add_edge('Argolis', 'Lakonia', 13)
   G.add_edge('Lakonia', 'Hydrea', 15)
+  G.add_edge('Lakonia', 'Kythera Island', 7)
   G.add_edge('Lakonia', 'Melos', 16)
   G.add_edge('Hydrea', 'Seriphos', 1)
   G.add_edge('Hydrea', 'Melos', 2)

@@ -116,6 +116,7 @@ G.add_edge('Thera', 'Anaphi')
 G.add_edge('Thera', 'Messara')
 G.add_edge('Anaphi', 'Messara')
 G.add_edge('Kythera Island', 'Messara')
+G.add_edge('Kythera Island', 'Lakonia')
 G.add_edge('Kos', 'Nisyros')
 G.add_edge('Anaphi', 'Nisyros')
 G.add_edge('Anaphi', 'Pephka')
@@ -194,6 +195,7 @@ G['Thera']['Anaphi']['peso'] = 1
 G['Thera']['Messara']['peso'] = 3
 G['Anaphi']['Messara']['peso'] = 4
 G['Kythera Island']['Messara']['peso'] = 9
+G['Kythera Island']['Lakonia']['peso'] = 9
 G['Kos']['Nisyros']['peso'] = 2
 G['Anaphi']['Nisyros']['peso'] = 1
 G['Anaphi']['Pephka']['peso'] = 3
