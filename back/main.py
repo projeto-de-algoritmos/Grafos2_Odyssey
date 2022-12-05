@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from cityList import cityList
+from primGraph import primGraph
 
 app = FastAPI()
 
@@ -13,11 +15,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-def graph2(city_i, city_d):
-    testRoute = ["Kephallonia", "Melos", "Hydrea", "Argolis"]
-    return testRoute
-
 @app.get("/graph")
 async def read_item(city_i: str, city_d: str):
-    final = graph2(city_i, city_d)
+    for city in cityList:
+        if city[0] == city_i:
+            begin = city[1]
+        if city[0] == city_d:
+            destiny == city[1]
+        
+    final = primGraph(begin, destiny)
     return final

@@ -39,7 +39,6 @@ G.add_node('Delos')
 G.add_node('Mykonos')
 G.add_node('Skyros')
 G.add_node('Euboea')
-G.add_node('Skyros')
 G.add_node('Chios')
 G.add_node('Lemnos')
 G.add_node('Lesbos')
@@ -84,7 +83,7 @@ G.add_edge('Phokis', 'Lokris')
 G.add_edge('Phokis', 'Malis')
 G.add_edge('Lokris', 'Malis')
 G.add_edge('Lokris', 'Euboea')
-G.add_edge('Euboea', 'Mekedonia')
+G.add_edge('Euboea', 'Makedonia')
 G.add_edge('Euboea', 'Lemnos')
 G.add_edge('Euboea', 'Skyros')
 G.add_edge('Malis', 'Makedonia')
@@ -162,7 +161,7 @@ G['Phokis']['Lokris']['peso'] = 2
 G['Phokis']['Malis']['peso'] = 1
 G['Lokris']['Malis']['peso'] = 1
 G['Lokris']['Euboea']['peso'] = 2
-G['Euboea']['Mekedonia']['peso'] = 4
+G['Euboea']['Makedonia']['peso'] = 4
 G['Euboea']['Lemnos']['peso'] = 26
 G['Euboea']['Skyros']['peso'] = 2
 G['Malis']['Makedonia']['peso'] = 2
