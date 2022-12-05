@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ```
 Rodar o projeto:
 ```
-python3 main.py
+uvicorn main:app --reload 
 ```
 ### Dentro da pasta front:
 

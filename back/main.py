@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from cityList import cityList
-from primGraph import primGraph
+from UCSGraph import shortestPath
 
 app = FastAPI()
 
@@ -17,11 +16,7 @@ app.add_middleware(
 
 @app.get("/graph")
 async def read_item(city_i: str, city_d: str):
-    for city in cityList:
-        if city[0] == city_i:
-            begin = city[1]
-        if city[0] == city_d:
-            destiny == city[1]
-        
-    final = primGraph(begin, destiny)
+    begin = city_i
+    destiny = city_d    
+    final = shortestPath(begin, destiny)
     return final
