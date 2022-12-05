@@ -12,11 +12,16 @@
 
 ## Sobre 
 Nesse projeto visamos aplicar os conhecimentos de Grafos 2 trazendo para o contexto do jogo Assassin's Creed Odyssey. Nossa aplicação gera um grafo com peso nas arestas com base no mapa do jogo, onde as cidades são os nós e as arestas são a distância mais o nível necessário para cada cidade (os pesos estão definidos na imagem 1). O objetivo do projeto é ajudar os jogadores à achar a melhor rota para que ele chegue em uma cidade destino de sua escolha considerando seu nível e a distância em jogo de uma cidade para outra.
+
 A distância foi calculada da seguinte forma:
 DT = D + LV
+
 Onde D é a distância entre as cidades, variando de 1-9
+
 E LV é: MinL - MaxL
+
 Na qual MinL é o menor nível da cidade e o MaxL o maior nível da cidade, por exemplo Achaia (42-46) o MinL seria 42 e o MaxL seria 46. 
+
 No cálculo é considerado o MinL da cidade com maiores níveis e o MaxL da cidade com menores níveis, ao exemplo de: Achaia e Kephallonia o MinL seria de Achaia(42) e o MaxL de Kephallonia(6), assim LV = 42 - 6 = 36 e D = 3 e DT = 3 + 36 = 39
 
 ## Screenshots
