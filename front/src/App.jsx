@@ -34,8 +34,7 @@ function App() {
   }
 
   function handleSubmitCity(){
-    // fazer fetch get para api
-    fetch(`http://localhost:8000/graph?city_i=${userCity.toLowerCase()}&city_d=${destinyCity.toLowerCase()}`)
+    fetch(`http://localhost:8000/graph?city_i=${userCity}&city_d=${destinyCity}`)
     .then((response) => response.json())
     .then((data) => {
       setLoadingResult(true)
@@ -80,9 +79,7 @@ function App() {
 
           {showCities && (
             <div id="step-city" className='widget-question'>
-              <h3>Selecione as cidades:</h3>
-              {/* <p>{cities.map(city => city.name).join(', ')}</p> */}
-            
+              <h3>Selecione as cidades:</h3>           
               <div className='input-container'>
                 <select value={userCity} name="cities" id="cities" onChange={(e)=> handleChangeCity(e.target.value)}>
                   <option>Selecione uma cidade de início</option>
@@ -108,7 +105,7 @@ function App() {
           {loadingResult && (
             <div id="step-route" className='widget-question'>
               <h3>A melhor rota para {destinyCity} considerando a distância e o nível das cidades é:</h3>
-              <p>{route.join(', ')}</p>
+              <p>{route}</p>
               <button onClick={handleResetForm}>Refazer</button>
             </div>
           )}
